@@ -21,9 +21,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, '/client/build')));
 
 
-app.get("/",(req,res)=>{
-    res.send("hey");
-})
+
 app.use('/api/auth',authRoute)
 app.use('/api/notes',noteRoute)
 app.get("*", (req, res) => {
