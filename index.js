@@ -14,8 +14,9 @@ const __dirname = dirname(__filename);
 
 
 const app = express();
-connectDB();
 dotenv.config();
+connectDB();
+
 app.use(cors());
 app.use(express.json());
 app.use(express.static(path.join(__dirname, '/client/build')));
