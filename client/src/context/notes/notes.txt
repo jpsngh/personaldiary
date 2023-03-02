@@ -1,8 +1,0 @@
-
-  const response = await fetch('https://localhost:4000/api/notes/addnote',{method:"POST", headers: {
-    "auth-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjNiZGY0MjM5NWMyZjBhMTJhNTRhN2I0In0sImlhdCI6MTY3Mzg0NTgwNn0.8vR_xFwcl6x-Uycuc5J9hKn",
-    
-  },body:JSON.stringify(title,description,tag)})
-.catch((error) => (console.log(error)) 
-  );
- const json = response.json()
