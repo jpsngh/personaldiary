@@ -8,8 +8,7 @@ const JWT_SECRET = " HARRY IS A BAD BOY"
 
 const createLogin = async (req,res)=>{
     console.log(req.body);
-    res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000")
-    res.setHeader("Access-Control-Allow-Credentials", "true");
+
 
 res.setHeader("Access-Control-Allow-Headers", "content-type");
 res.setHeader( "Access-Control-Allow-Methods", "PUT, POST, GET, DELETE, PATCH, OPTIONS" ); 
